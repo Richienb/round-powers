@@ -1,6 +1,6 @@
 {
 	"name": "round-powers",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Round a number to the closest power.",
 	"repository": "https://github.com/Richienb/round-powers.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
