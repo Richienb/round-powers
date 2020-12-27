@@ -1,41 +1,52 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# round-powers [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-powers/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-powers)
 
-My awesome module.
+Round a number to the closest power.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/round-powers.png)](https://npmjs.com/package/round-powers)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install round-powers
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const roundPowers = require("round-powers")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+roundPowers(10, 2)
+//=> 8
+
+roundPowers.up(10, 2)
+//=> 16
+
+roundPowers.down(10, 2)
+//=> 8
 ```
 
 ## API
 
-### theModule(input, options?)
+### roundPowers(number, base)
 
-#### input
+Round `number` to the nearest power of `base`.
 
-Type: `string`
+### roundPowers.up(number, base)
 
-Lorem ipsum.
+Round `number` up to the nearest power of `base`.
 
-#### options
+### roundPowers.down(number, base)
 
-Type: `object`
+Round `number` down to the nearest power of `base`.
 
-##### postfix
+#### number
 
-Type: `string`\
-Default: `rainbows`
+Type: `number`
 
-Lorem ipsum.
+The number to round.
+
+#### base
+
+Type: `number`
+
+The base number to find the nearest power of.

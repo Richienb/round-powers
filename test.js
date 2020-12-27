@@ -1,13 +1,8 @@
 const test = require("ava")
-const theModule = require(".")
+const roundPowers = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(roundPowers(10, 2), 8)
+	t.is(roundPowers.up(10, 2), 16)
+	t.is(roundPowers.down(10, 2), 8)
 })
